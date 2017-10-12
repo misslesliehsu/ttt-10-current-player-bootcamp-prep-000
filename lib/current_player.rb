@@ -1,5 +1,5 @@
 #turncount
-def turncount(board)
+def turn_count(board)
   counter = 1
   board.each do |square|
     if square == "X" || square == "O"
@@ -9,7 +9,7 @@ def turncount(board)
 end
 
 def current_player(board)
-  total_turns = turncount(board)
+  total_turns = turn_count(board)
   if total_turns % 2 == 0
     return "X"
   else
